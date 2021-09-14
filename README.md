@@ -1,4 +1,4 @@
-In the following repository, I will be building a classification model for the (Adult Census Income dataset)[https://www.kaggle.com/uciml/adult-census-income].
+In the following repository, I will be building a classification model for the [Adult Census Income dataset](https://www.kaggle.com/uciml/adult-census-income).
 
 **About the Data**:
 
