@@ -1,3 +1,6 @@
+#ifndef ETL_H_
+#define ETL_H_
+
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -70,4 +73,4 @@ vector<pair<string, vector<int>>> read_csv(string filename){
 
     return result;
 }
-
+#endif
