@@ -1,6 +1,7 @@
 #Local Files
 Dataset/*
 .vscode/
+main
 
 # Prerequisites
 *.d
