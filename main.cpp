@@ -13,4 +13,6 @@ int main(int argc, char *argv[]){
      
 
     std::vector<std::vector<std::string>> dataset = etl.readCSV();
+    return EXIT_SUCCESS;
+
 }
