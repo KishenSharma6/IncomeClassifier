@@ -10,14 +10,15 @@ set(CMAKE_REQUIRED_LINK_OPTIONS "-arch;arm64")
 
 
 find_package(Boost 1.76 REQUIRED COMPONENTS filesystem)
-find_package(Eigen 3.4.0_1 REQUIRED COMPONENTS filesystem)
+
+find_package(Eigen 3.4.0 REQUIRED NO_MODULE)
+
+
 add_executable(main main.cpp)
 
 target_link_libraries(main
   PUBLIC
     Boost::filesystem
   )
-  target_link_libraries(main
-  PUBLIC
-    Eigen::filesystem
-  )
+
+target_link_libraries(main Eigen3::Eigen)
