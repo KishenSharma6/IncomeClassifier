@@ -27,3 +27,20 @@ std::vector<std::vector<std::string>> ETL::readCSV(){
     file.close();
     return dataString;
 }
+
+Eigen::MatrxXd ETL::CSVtoEigen(std::vector<std::vector<std::string>> dataset, int rows, int cols){
+    //Function will store output of readCSV() as eigen matrix
+    if(header==true){
+        rows= rows-1;
+        //we dont need header files from data
+    }
+
+    Eigen::MatrixXd mat(cols, rows); // create empty matrix
+    for(int=0; i<rows; i++){ // iterate over cols and rows and rill with numbers
+        for(int j=0; j<cols; ++j){
+            mat(j,i)= atof(dataset[i][j].c_str()); //convert strings to floats
+        }
+    }
+
+    return mat.transpose();
+}
