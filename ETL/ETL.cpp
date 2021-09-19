@@ -28,7 +28,7 @@ std::vector<std::vector<std::string>> ETL::readCSV(){
     return dataString;
 }
 
-Eigen::MatrxXd ETL::CSVtoEigen(std::vector<std::vector<std::string>> dataset, int rows, int cols){
+Eigen::MatrixXd ETL::CSVtoEigen(std::vector<std::vector<std::string>> dataset, int rows, int cols){
     //Function will store output of readCSV() as eigen matrix
     if(header==true){
         rows= rows-1;

@@ -16,7 +16,7 @@ public:
 
     std::vector<std::vector<std::string>> readCSV();
 
-    Eigen::MatrxXd CSVtoEigen(std::vector<std::vector<std::string>> dataset, int rows, int cols);
+    Eigen::MatrixXd CSVtoEigen(std::vector<std::vector<std::string>> dataset, int rows, int cols);
 
 };
 
