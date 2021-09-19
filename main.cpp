@@ -19,6 +19,8 @@ int main(int argc, char *argv[]){
 
     Eigen::MatrixXd dataMat = etl.CSVtoEigen(dataset, rows, cols);
 
+    //Check data
+    std::cout << dataMat << std::endl;
     return EXIT_SUCCESS;
 
 }
