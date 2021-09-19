@@ -36,7 +36,7 @@ Eigen::MatrxXd ETL::CSVtoEigen(std::vector<std::vector<std::string>> dataset, in
     }
 
     Eigen::MatrixXd mat(cols, rows); // create empty matrix
-    for(int=0; i<rows; i++){ // iterate over cols and rows and rill with numbers
+    for(int i=0; i<rows; i++){ // iterate over cols and rows and fill with numbers
         for(int j=0; j<cols; ++j){
             mat(j,i)= atof(dataset[i][j].c_str()); //convert strings to floats
         }
